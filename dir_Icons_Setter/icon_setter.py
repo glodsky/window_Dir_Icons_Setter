@@ -137,7 +137,7 @@ def set_icon(exe_file,dir_name, icon_file):
     )
     output = ""
     iterations = 0
-    # ensure the output contains "Duration"
+ 
     while (not "start" in output and iterations < 100):
         buffer_read = str(process.stderr.read())
         iterations += 1
